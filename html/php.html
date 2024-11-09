@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Cursa Informatica</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <style>
+            /* Selecciona todas las listas no ordenadas y elimina los puntos */
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <a href="../index.html"><li>Reparacion y armado de pc</li></a>|
+                <a href="hardware.html"><li>Hardware</li></a>|
+                <a href="redes.html"><li>Redes</li></a>|
+                <a href="seguridadInformatica.html"><li>Seguridad Informatica</li></a>|
+                <a href="virus.html"> <li>Virus</li></a>|
+                <a href="programacionEnC.html"><li>Programacion en C</li></a>|
+                <a href="php.html"><li>PHP</li></a>|
+                <a href="bashScripting.html"> <li>Bash - Scripting</li></a>|
+            </ul>
+        </nav><br>
+        <div class="aboutme">
+            <a href="../aboutme.html">ABOUT ME</a>
+        </div><br><br>
+           <p><?php</p>
+        <p>$a = 34</p>
+        <p>echo $a;</p>
+        <hr><br>
+        <p>/* */ comentario</p><hr><br> 
+        <p>$a = 'Hola';</p>
+        <p>$b ='mundo< br>'</p>
+        <p>echo $a . " " . $b</p><hr><br>
+        <p>define('IDIOMA','castellano'< br>');</p><br>
+        <p>echo IDIOMA</p>
+        <p>echo 'El lenguaje de la web es: ' . IDIOMA</p><hr><br><br>
+        <p>$numeros[0]=12</p>
+        <p>$numeros[1]=4</p>
+        <p>$numeros[2]=7</p>
+        <p>echo $numeros[1];</p><hr><br><br>
+        <br>
+       
+        <br>
+        <p>$paises = array('Argentina','Brasil','Uruguay'):</p><hr><br>
+        <p>$productos [567]='Lavarropas';</p>
+        <p>$productos [325]='Heladera';</p>
+        <p>echo $productos[567];</p><hr><br>
+        <p>echo $_SERVER[HTTP_USER_AGENT'];</p>
+        <p>echo $_SERVER['SERVER_NAME'];</p><hr><br>
+        <p>include('variables.php');</p><hr><br>
+        <p>$a == $b comparar</p>
+        <p>$a != $b distinto</p><hr><br>
+        <p>if ($a==5 and $b==12={ echo "VERDADERO"; }else{echo "Falso";}</p><hr><br>
+        <p>$variable = 2</p>
+        <p>switch($variable){</p>
+        <p>case 1: $mensaje = "Uno";break;</p>
+        <p>case 2: $mensaje = "Dos";break;</p>
+        <p>case 3: $mensaje = "Tres";break;</p><hr><br>
+        <p>for($x=1;$x<=10;$x=$x+1)</p>
+        <p>echo("El valor de x es: " . $x . "< br>"</p>
+        <p>$valor++;</p><hr><br>
+        <p>$valor = 1;</p>
+        <p>while($valor <=5){</p>
+        <p>echo "El valor de la variable es: " .$valor</p>
+        <p>}</p>
+        <p>echo $valor</p><hr><br>
+        <p>$valor = 7;</p>
+        <p>do{</p>
+        <p>echo "El valor de la variable es: " . $valor</p>
+        <p>$valor++;</p><br><hr>
+        <p>function saludar($a){</p>
+        <p>$saludo = 'Hola'</p>
+        <p>return $saludo;</p>
+        <p>$b = saludar('Pedro');</p>
+        <p>echo $b</p>
+        <p>function saludar($a){</p>
+        <p>$saludo = 'Hola' . $a;</p>
+        <p>echo $saludo</p>
+    </body>
+</html>

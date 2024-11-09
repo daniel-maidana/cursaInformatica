@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>Cursa Informatica</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <style>
+            /* Selecciona todas las listas no ordenadas y elimina los puntos */
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <a href="../index.html"><li>Reparacion y armado de pc</li></a>|
+                <a href="hardware.html"><li>Hardware</li></a>|
+                <a href="redes.html"><li>Redes</li></a>|
+                <a href="seguridadInformatica.html"><li>Seguridad Informatica</li></a>|
+                <a href="virus.html"> <li>Virus</li></a>|
+                <a href="programacionEnC.html"><li>Programacion en C</li></a>|
+                <a href="php.html"><li>PHP</li></a>|
+                <a href="bashScripting.html"> <li>Bash - Scripting</li></a>|
+            </ul>
+        </nav><br>
+        <div class="aboutme">
+            <a href="../aboutme.html">ABOUT ME</a>
+        </div>
+        <br><br>
+        <h1>CLASES DE DIRECCIONES IP</h1>
+                <p>La razon por la cual la direccion ip llega a destino es internet es que cada red conectada a internet
+                    tienen un numero de red que es unico y exclusivo, para garantizar que sea exclusivo una organizacion
+                    internacional de informacion de red(INTERNIC), asigna bloques de direcciones ip a las empresas
+                    basandose en sus tamaños de sus redes </p><br>
+                <p>
+                <p>Cada direccion IP consta de dos partes: el numero de red y el numero de host. El numero de red
+                        identifica la red que forma parte del dispostivo. El numero de host identifica la direccion del
+                        dispositivos en dicha red. </p><br>
+                <p>Internic asigna 3 clases de direcciones IP, las direcciones de IP clase A para identidades
+                            gubernamentales, las direcciones IP de clase B para empresas medianas y las direcciones IP
+                            clase C
+                            para todo el resto.
+                </p>
+                <p>
+                            Cuando las direcciones IP de clase Ase escriben en formato binario el primer campo siempre
+                            es 0. Cuando las direcciones IP de clase B se escriben en formato binario los dos primeros
+                            bits son siempre 1 y 0. Cuando las IP de clase C se escriben en formato binario los primeros
+                            3 bits son siempre 1,1 y 0
+                </p><br>
+                <h1>CLASES DE REDES RESERVADAS</h1>
+                <p>
+                            Como vimos 3 clases de redes que pueden ser asignada por internic, aunque existen 5 clases
+                            de direcciones de red. Los otros dos se usan para multicast la D, y para investigacion la
+                            clase E.
+                </p><br>
+                        
+                <p><b>RED CLASE A=</b>RED-HOST-HOST-HOST</p><br>
+                <p><b>RED CLASE B=</b>RED-RED-HOST-HOST</p><br>
+                <p><b>RED CLASE C=</b>RED-RED-RED-HOST</p><br>
+                </p>
+
+                <br><br><br><br><br>
+               
+                
+                <p>Ademas las direcciones IP reservadas, queda reservada cualquier direccion IP que tenga solo numeros 0
+                    o solo 1 en la parte de direcciones que refiera al host. </p><br>
+                <p>
+                    Hay ocasiones en las que se hace necesario referirse a todos los dispositivos de la red, por esta
+                    razon se ha diseñado un metodo abreviada para referirse a la red.
+                </p><br>
+                <p>
+                    En los sistemas de direccionamiento IP, cualquier direccion que termina en 0 binario en la parte
+                    referente al host queda reservada por convension para la direcciones red.
+
+                </p><br>
+                <p>
+                    Tambien queda determinado por convension que el campo referente al host esta compuesto por una serie
+                    de interrumpidos 1 binarios se utilizara para direccion de broadcast.
+
+                </p><br>
+                <p>
+                    Se produce un broadcast cuando un equipo de origen envia datos a todos los dispositivos de la red y
+                    para que todos los dispositivos presten atencion, se utiliza una direccion IP que todos puedan
+                    reconocer y captar como vimos una serie interrumpidos 1 binarios en el host.
+                </p>
+                <br>
+                <p>
+                    Para la transferencia de datos en internet, una red percibe a otra como una red integra y no tiene
+                    conocimiento de su estructura interna, estoy ayuda a que las tablas de enrutamiento sea pequeñas.
+                </p><br>
+                <p>
+                    Sin embargo las redes internas pueden dividirse en redes mas pequeñas especialmente las de gran
+                    envergadura denominada subredes, esto le va a permitir al administrador mejorar la administracion y
+                    administrar flixibilidad adicional.
+                </p><br>
+                <h1>DIRECCIONAMIENTO DE SUBRED</h1>
+                <p>
+                    Tal como sucede con la parte de numero de host de las direcciones es A,B y C, las direcciones de
+                    subred se asignan de forma local, el encargado de hacer esto es el administrador de red. Al igual
+                    que otras direcciones IP, la direccion de red es unica. Al utilizar sus redes no se produce ningun
+                    cambio en la que la forma en el que el exterior percibe la red pero si crean estructura adicional
+                    dentro de la organizacion.
+
+                </p>
+                <p>
+                    255.255.255.0
+                <p> R - R- R- 0 </p>
+                </p><br>
+
+                <br>
+                
+              
+
+                <p>
+                    Los administradores de red reciben el tamaño de las subredes basandose en las necesidades de la
+                    organizacion.
+                </p><br>
+                <p>
+                    Una direccion de subred incluye un numero de red, un numero de subred dentro de la red y un numero
+                    de host dentro de la subred.
+                </p><br>
+                <p>
+                    Para crear una direccion de subred, el administrador pide prestado bits dentro del campo de host y
+                    los designa como campo de subred. Se pueden pedir prestado cualquier cantidad de bits siempre y
+                    cuando queden 2 bits disponibles.
+                </p><br>
+                <p>
+                    Para crear una direccion de subred, el administrador de red pide prestado bits del campo de host y
+                    los designa como campo de subred.
+                </p><br>
+                <p>
+                    Cada vez que se pide bit en el campo de host queda un bits menos que se puede utilizar para el numero de host, por ejemplo: en una red de clase c con 3 bits prestados. 
+                </p>
+
+    </body>
+</html>

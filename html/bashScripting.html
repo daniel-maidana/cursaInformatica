@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>Cursa Informatica</title>
+        <link rel="stylesheet" href="../css/styles.css">
+        <style>
+            /* Selecciona todas las listas no ordenadas y elimina los puntos */
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <ul>
+                <a href="../index.html"><li>Reparacion y armado de pc</li></a>|
+                <a href="hardware.html"><li>Hardware</li></a>|
+                <a href="redes.html"><li>Redes</li></a>|
+                <a href="seguridadInformatica.html"><li>Seguridad Informatica</li></a>|
+                <a href="virus.html"> <li>Virus</li></a>|
+                <a href="programacionEnC.html"><li>Programacion en C</li></a>|
+                <a href="php.html"><li>PHP</li></a>|
+                <a href="bashScripting.html"> <li>Bash - Scripting</li></a>|
+            </ul>
+        </nav><br>
+        <div class="aboutme">
+            <a href="../aboutme.html">ABOUT ME</a>
+        </div>
+        <p>cat /proc/version = Imprimir kernel mas detallado</p>
+        <p>cat /proc/cpuinfo = Imprimir lista de la informacion de la computadora</p>
+        <p>Lshw = Informacion del hardware completo</p>
+        <p>cat /proc/meminfo = Informacion de la memoria</p>
+        <p>free = Datos de la memoria ram</p>
+        <p>df = informacion del disco</p>
+        <p>whoiam = Nombre de usuario</p>
+        <p>hostname = nombre de la maquina</p>
+        <p>pws = directorio donde estoy parado</p>
+        <p>date = Fecha y dia actual con hora</p>
+        <p>cal = Calendario con mes actual</p>
+        <p>cal 2022 = Calendario completo</p>
+        <p>cat > archivo.txt = crear archivo</p>
+        <p>sudo -s = Pasar a root</p>
+        <p>cd = Cambiar de directorio</p>
+        <p>cd.. = Volver un paso hacia atras</p>
+        <p>echo $HOME = Imprime contenido de home</p>
+        <p>cat /etc/passwd = Usuario de sistema</p>
+        <p>mkdir = Crear directorio o carpeta</p>
+        <p>tree = Mostrar arbol del directorio</p>
+        <p>sudo snap install tree = Instalar tree</p>
+        <p>touch = Crear archivo vacio</p>
+        <p>nano texto.txt = Editor</p>
+        <p>mv = Mover o renombrar</p>
+        <p>rm = Remover archivos</p>
+        <p>rm -r = Borrar carpetas con archivos</p>
+        <p>cp = Copiar</p>
+        <p>ls -ah = Archivos de sistemas</p>
+        <p>head -n /etc/passwd = Cantidad de lineas que quiero ver</p>
+        <p>tail /etc/passwd = Imprimir ultimas lineas</p>
+        <p>wc = Contar cosas</p>
+        <p>add group = Administracion crear grupos</p>
+        <p>cat /etc/group = Imprimir grupos y usuarios</p>
+        <p>userdel Pepe = Borrar usuario</p>
+        <p>group del Administracion = Borrar grupo</p>
+        <p>usermod -a -G Operadoras Jose = Asignar usuario</p>
+        <p> cat /etc/passwd > salida.txt = Lo que ejecuta cat, mandarlo a salida.txt</p>
+        <p>stdout = 1</p>
+        <p>stdin = 2</p>
+        <p>stderr = 3</p>
+        <p>cat /etc/group.txt = Lo que imprime mandar el estandar a txt</p>
+        <p>echo Hola Mundo >> cartel.txt = Agrega el hola mundo al txt (no lo borra)</p>
+        <p>cat /etc/passwd 1>salida 2>errores.txt = Mandar el stdout a salida .txt y los errores a a errores.txt</p>
+        <p>cat /etc/passwd 1>salida.txt 2>&1 = Mandar el stdout y strderr a errores.txt</p>
+        <p>/dev/null = Cuando se manda algo, se borra</p>
+        <p>| = concatena comando</p>
+        <p>cat /etc/passwd | wc -l = Contar cosas</p>
+        <p>-c = byte </p>
+         <p>-m = cantidad de palabras</p>
+        <p>A && B = Si A no tiene problemas, se ejecuta B</p>
+        <p>cat /etc/passwd && echo 'Andubo bien'</p>
+        <p>cat /etc/passwd && echo 'Andubo bien' 2>errores.txt = Borrar grupo</p>
+        <p>A || B = Se ejecuta si 'A' tubo errores</p>
+        <p>cat /etc/passwd || "Andubo bien" = Lo que ejecuta cat, mandarlo a salida.txt</p>
+        <p>cat etc/noexiste 2>errores.txt || ls -la 1 > archivos.tx</p>
+        <p>Ps = Ver procesos que esta ejecutando la terminal</p>
+        <p>Head -4 = Muestras las primeras 4 lineas</p>
+        <p>Env = Muestras las variables de entorno que existen</p>
+        <p>Env | sort = ordenar alfabeticamente</p>
+        <p>EXPORT MI_VARIABLE="Hola mundo" = Crear variable</p>
+        <p>.bash_history = Historial</p>
+        <p>d = directorio</p>
+        <p>sleep = temporizador</p>
+        <p>sleep 30 & = Segundo plano</p>
+        <p>jobs = Ver procesos de ejecucion</p>
+        <p>kill = Matar y eliminar proceso</p>
+        <p>nice = Afectar el valor de prioridad</p>
+        <p>uptime = Tiempo transcurrido desde el encendido de la pc</p>
+        <p>grep = Filtrar por un patron una palabra en archivos de textos</p>
+        <p>grep "login" /etc/passwd 2>errores.txt = Borrar grupo</p>
+        <p>more salida_home.txt = Es parecido al cat pero muestra de a pedazos</p>
+        <p>cut = Corta cierta informacion de las salidas</p>
+        <p>Find = Busca archivos en el directorio</p>
+        <p>Find /type f -name "passwd"</p>
+        <p>Sort -t ";" -k3 -n -r listadoAlumno.txt | cut -f 1-2 -2 "," output-delimiter="_"Muestras las primeras 4 lineas</p>
+        <p>tar = comprimir y descomprimir</p>
+        <p>c = nuevo archivo .tar</p>
+        <p>v = ver proceso de compresion</p>
+        <p>f = Nombre de un archivo</p>
+        <p>tar cvf archivoComprimido.tar *.txt = directorio</p>
+        <p>t = contenido del archivo comprimido</p>
+        <p>tar tvf listadoAlumnos.tar = Segundo plano</p>
+        <p>x = Extraer</p>
+        <p>tar xvf archivoComprimido.tar = Matar y eliminar proceso</p>
+        <p>rm *.txt = Borrar todos los .txt</p>
+        <li>
+            <p>💻#! bin/bash <b class="bashscript"> Los script siempre llevan esto adelante </b></p><br>
+        </li>
+        <li>
+            <p>🖥Bash miPrimerScript.sh <b class="bashcolor">Ejecuta el script</b></p><br>
+        </li>
+        <li>
+            <p>👌.miPrimerScript<b class="bashcolor"> </b>Ejecuta script</p><br>
+        </li>
+        <li>
+        <p>#👉 <b class="bashcolor">comentario</b></p><br>
+        </li>
+        <li>💻 <p>chmod 700 <b class="bashcolor">Dar permisos<b></p><br></li>
+        <li>
+        <p>💻Clear</p>
+        <p>Echo Lenguaje de script</p>
+        <p>A = "Test"</p>
+        <p>C = "mkdir $a"</p>
+        <p>If $c</p>
+        <p>Then</p>
+        <p>Echo "directorio creado"</p>
+        <p>Else</p>
+        <p>Echo "directorio no creado"</p>
+        <p>fi</p>
+        <li>💻Unset<b class="bashcolor"> borrar valor de una variable</b></p><br></li>
+        </li>
+        <li>
+        <p> 🖥 If [$Contador -ne 9 ] ; then</p>
+        <p>Echo "Es distinta"</p>
+        <p>Else</p>
+        <p>Echo "Son iguales"</p>
+        <p>Fi</p>
+        <b class="bashcolor"></b>Busca archivos en el directorio<br>
+        </li>
+        <li>
+            <p>💻-gt<b class="bashcolor" </b> Mas grande que </p><br>
+        </li>
+        <li>-lt <p><b class="bashcolor">Mas chico que </b></p><br></li>
+        <li>
+        <p>Edad = 10</p>
+        <p>If [ $EDAD -gt 18 ] && [$EDAD -lt 40] ; then</p>
+        <p>Echo "La edad esta en el rango</p>
+        <p>Else</p>
+        <p>Echo "La edad es distinta</p>
+        <p>Fi</p>
+
+        <li>
+        <p> 💻Edad = 18</p>
+        <p>if (($edad >= 18)) && (($edad <=40)) </p>
+                <p>Then</p>
+                <p>Echo "La edad esta en el rango</p>
+                <p>Else</p>
+                <p>Echo "La edad es distinta"</p>
+                <p>fi</p>
+
+
+    <li>
+        <p> 💻Numero = 1</p>
+        <p>While [ $NUMERO -lt 10 ]</p>
+        <p>Do</p>
+        <p>Echo "El numero es $NUMERO"</p>
+        <p>$NUMERO = $((numero +1))</p>
+        <p>done</p>
+
+    <li>
+        <p> 💻Until (($numero >10))</p>
+        <p>do</p>
+        <p>Echo "El numero es $NUMERO"</p>
+        <p>NUMERO =$((numero +1))</p>
+        <p>Done</p>
+
+        <b class="bashcolor"></b><br>
+    </li>
+    <li>
+        <p> 💻For i in 1 2 3 4 5 6 7 8 9 10</p>
+        <p>Do</p>
+        <p>Echo $i</p>
+
+        <b class="bashcolor"></b><br>
+    </li>
+    <li>
+        <p>💻 Lista = 1 2 3 4 5 6 7 8 9 10</p>
+        <p> For i in $lista</p>
+        <p> Do </p>
+        <p> Echo $i </p>
+        <p> Done </p>
+        <br><br><br><br>
+        <b class="bashcolor"></b></p><br>
+    </li>
+    <li>
+        <p> 💻 For ((i=0;i<=10;i+1))< /p>
+                <p>Do</p>
+                <p>Echo $i</p>
+                <p>done</p>
+
+    <li>
+        <p>💻 For i in{0..10..2}</p>
+        <p>Do</p>
+        <p>echo $i</p>
+        <p>done</p>
+
+    <li><b class="bashcolor"> </b><br>
+        <p> 💻 Case $VEHICULOS in </p>
+        <p>"BMW") echo "Es un BMW";; </p>
+        <p>"Mercedes benz" echo "Es un MB";; </p>
+        <p>"Toyota" echo "Es un Toyota" </p>
+        <p>*) echo "Nombre de auto desconocido" </p>
+        <p>esac </p>
+    </li>
+
+    <b class="bashcolor"></b><br>
+
+    <li>
+        <p> 💻 (PARA CADENAS)</p>
+        <p> = igual</p>
+        <p>! distinto</p>
+        <p>> Mayor</p>
+        <p>
+            < Menor</p>
+                <p>-n Si no esta vacio</p>
+                <p>-z Si la cadena esta vacia</p>
+    </body>
+</html>

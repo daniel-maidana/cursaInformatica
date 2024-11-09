@@ -1,0 +1,62 @@
+body{
+    background-color: #96E6B3;
+}
+.menu{
+    color: #F1FFFA;
+    background-color: #464E47;
+    font-size: 22px;
+
+}
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    color: #F1FFFA;
+}
+.contenido{
+    font-size: 20px;
+}
+.aboutme{
+
+    font-size: 30px;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutme{
+    text-align: left;
+
+}
+.foto{
+    text-align: center;
+}
+.foto img{
+ text-align: center;
+ border-radius: 50%;
+
+}
+.redes{
+    display: flex; 
+    justify-content: center;
+   
+    
+}
+.volver{
+    font-size: 40px;
+}
+
+.ceo{
+    font-size: 40px;
+    color: #464E47;
+}
+.hardware{
+    text-align: center;
+}
+p{
+    font-size: 25px;
+}
